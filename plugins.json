@@ -1,8 +1,8 @@
-[
+[   
     {
         "iconUrl": "https://ia601901.us.archive.org/27/items/aaa_20250423/aaa.png",
         "apiVersion": 1,
-        "repositoryUrl": "https://github.com/kovacsalexandru77/NETFLIPRINE/tree/main/SANDUPLUGIN",
+        "repositoryUrl": "https://github.com/kovacsalexandru77/Netflixsandu/tree/main/Netflixsandu",
         "fileSize": 36641,
         "status": 1,
         "authors": [
@@ -15,7 +15,7 @@
         "version": 19,
         "internalName": "NetflixMirrorProvider",
         "description": "Netflix, PrimeVideo Content in Multiple Languages",
-        "url": "https://github.com/kovacsalexandru77/NETFLIPRINE/blob/main/NetflixMirrorProvider.cs3",
+        "url": "https://github.com/kovacsalexandru77/Netflixsandu/blob/main/NetflixMirrorProvider.cs3",
         "name": "NetflixMirrorProvider"
-    }
+    }   
 ]
