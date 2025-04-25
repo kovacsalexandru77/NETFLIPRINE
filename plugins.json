@@ -1,4 +1,25 @@
 [
+     {
+        "iconUrl": "https://ia600504.us.archive.org/9/items/polish-20250421-185417988/Polish_20250421_185417988.png",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/kovacsalexandru77/NETFLIPRINE/tree/main/SANDUPLUGIN",
+        "fileSize": 23610,
+        "status": 1,
+        "language": "hu",
+        "authors": [
+            "sandu"
+        ],
+        "tvTypes": [
+            "TvSeries",
+            "Movie",
+            "Anime"
+        ],
+        "version": 19,
+        "internalName": "MoviesDrive",
+        "description":  "Movies and TV Shows",
+        "url": "https://github.com/kovacsalexandru77/NETFLIPRINE/blob/main/NetflixMirrorProvider.cs3",
+        "name": "MoviesDrive"
+    },
     {
         "iconUrl": "https://ia601901.us.archive.org/27/items/aaa_20250423/aaa.png",
         "apiVersion": 1,
