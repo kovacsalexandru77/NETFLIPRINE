@@ -1,8 +1,0 @@
-{
-  "name": "SANDU-NETFLIX(MULTILANGUAGE)",
-  "description": "created sandu",
-  "manifestVersion": 1,
-  "pluginLists": [
-    "https://raw.githubusercontent.com/kovacsalexandru77/NETFLIPRINE/refs/heads/main/plugins.json"
-  ]
-}
