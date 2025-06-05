@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <title>NetMirrorTV</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background: #111;
+      padding: 10px;
+      text-align: center;
+      border-bottom: 3px solid limegreen;
+    }
+
+    .title-text {
+      color: cyan;
+      font-size: 24px; /* Kisebb méret */
+      font-weight: bold;
+      display: inline;
+      margin-right: 10px; /* Kisebb távolság a gombokhoz */
+    }
+
+    nav {
+      display: inline;
+      margin-left: 10px; /* Kisebb távolság a címtől */
+    }
+
+    nav button {
+      background: limegreen;
+      color: black;
+      border: none;
+      padding: 8px 16px; /* Kisebb padding */
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 6px;
+      font-size: 14px; /* Kisebb betűméret */
+      margin: 0 5px; /* Kisebb távolság a gombok között */
+    }
+
+    nav button:hover {
+      background: cyan; /* Hover állapot színe */
+      color: black;
+    }
+
+    iframe {
+      width: 100%;
+      height: calc(100vh - 180px); /* Kisebb magasság a fejléc + nav miatt */
+      border: none;
+      max-width: 100%; /* Rugalmas szélesség */
+    }
+
+    #clock {
+      position: fixed;
+      top: 10px;
+      right: 20px;
+      color: cyan;
+      font-size: 24px; /* Kisebb méret */
+      font-weight: bold;
+      letter-spacing: 2px;
+      z-index: 999999;
+      pointer-events: none;
+    }
+
+    .subtitle-text {
+      text-align: center; /* Középre igazítás */
+      color: white;
+      margin-top: 10px;
+      font-size: 14px; /* Kisebb méret */
+      font-weight: normal;
+    }
+
+    @media (max-width: 768px) {
+      .title-text {
+        font-size: 20px; /* Mobilon még kisebb méret */
+      }
+      nav button {
+        font-size: 12px; /* Mobilon kisebb gombok */
+        padding: 6px 12px; /* Mobilon kisebb padding */
+      }
+      #clock {
+        font-size: 20px; /* Mobilon kisebb óra */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="title-text">NETFLIX PREMIUM</div>
+    <nav>
+      <button onclick="loadPage('https://netfree2.cc/tv/movies')">Filmek</button>
+      <button onclick="loadPage('https://netfree2.cc/tv/series')">Sorozatok</button>
+    </nav>
+  </header>
+
+  <iframe id="contentFrame" src="https://netfree2.cc/tv/movies" allowfullscreen></iframe>
+
+  <script>
+    function loadPage(url) {
+      document.getElementById('contentFrame').src = url;
+    }
+  </script>
+
+  <div id="clock">Betöltés...</div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const hours = String(now.getHours()).padStart(2, "0");
+      const minutes = String(now.getMinutes()).padStart(2, "0");
+      const seconds = String(now.getSeconds()).padStart(2, "0");
+      document.getElementById("clock").textContent = `${hours}:${minutes}:${seconds}`;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+  
+  <div class="subtitle-text">Created Sandu</div>
+</body>
+</html>
