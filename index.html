@@ -20,39 +20,39 @@
 
     .title-text {
       color: cyan;
-      font-size: 24px; /* Kisebb méret */
+      font-size: 24px; 
       font-weight: bold;
       display: inline;
-      margin-right: 10px; /* Kisebb távolság a gombokhoz */
+      margin-right: 10px; 
     }
 
     nav {
       display: inline;
-      margin-left: 10px; /* Kisebb távolság a címtől */
+      margin-left: 10px; 
     }
 
     nav button {
       background: limegreen;
       color: black;
       border: none;
-      padding: 8px 16px; /* Kisebb padding */
+      padding: 8px 16px;
       font-weight: bold;
       cursor: pointer;
       border-radius: 6px;
-      font-size: 14px; /* Kisebb betűméret */
-      margin: 0 5px; /* Kisebb távolság a gombok között */
+      font-size: 14px; 
+      margin: 0 5px; 
     }
 
     nav button:hover {
-      background: cyan; /* Hover állapot színe */
+      background: cyan; 
       color: black;
     }
 
     iframe {
       width: 100%;
-      height: calc(100vh - 180px); /* Kisebb magasság a fejléc + nav miatt */
+      height: calc(100vh - 200px); 
       border: none;
-      max-width: 100%; /* Rugalmas szélesség */
+      max-width: 100%;
     }
 
     #clock {
@@ -60,7 +60,7 @@
       top: 10px;
       right: 20px;
       color: cyan;
-      font-size: 24px; /* Kisebb méret */
+      font-size: 24px; 
       font-weight: bold;
       letter-spacing: 2px;
       z-index: 999999;
@@ -68,23 +68,29 @@
     }
 
     .subtitle-text {
-      text-align: center; /* Középre igazítás */
+      text-align: center; 
       color: white;
       margin-top: 10px;
-      font-size: 14px; /* Kisebb méret */
+      font-size: 14px; 
       font-weight: normal;
     }
 
     @media (max-width: 768px) {
       .title-text {
-        font-size: 20px; /* Mobilon még kisebb méret */
+        font-size: 20px; 
       }
       nav button {
-        font-size: 12px; /* Mobilon kisebb gombok */
-        padding: 6px 12px; /* Mobilon kisebb padding */
+        font-size: 12px; 
+        padding: 6px 12px; 
       }
       #clock {
-        font-size: 20px; /* Mobilon kisebb óra */
+        font-size: 20px; 
+      }
+    }
+
+    @media (orientation: landscape) {
+      iframe {
+        height: calc(100vh - 150px); /* Magasság csökkentése tájoláskor */
       }
     }
   </style>
